@@ -1,3 +1,4 @@
+/* Reset de estilos para todos os elementos */
 *{
     margin: 0;
     padding: 0;
@@ -5,32 +6,36 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* Estilizando o corpo da página */
 body {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: url(imagens/4884273.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    min-height: 100vh; /* Define a altura mínima como 100% da altura da viewport */
+    background: url(imagens/4884273.jpg) no-repeat; /* Define a imagem de fundo */
+    background-size: cover; /* Faz com que a imagem de fundo cubra todo o container */
+    background-position: center; /* Posiciona a imagem no centro */
 }
 
+/* Estilizando o contêiner principal do formulário */
 .wrapper {
     width: 420px;
     background: transparent;
-    border: 2px solid rgba(255, 255, 255, .2);
-    backdrop-filter: blur(20px);
-    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
-    color: #fff;
-    border-radius: 10px;
-    padding: 30px 40px;
+    border: 2px solid rgba(255, 255, 255, .2); /* Define uma borda com transparência */
+    backdrop-filter: blur(20px); /* Adiciona um efeito de desfoque ao fundo */
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2); /* Adiciona uma sombra ao contêiner */
+    color: #fff; /* Define a cor do texto como branco */
+    border-radius: 10px; /* Adiciona bordas arredondadas */
+    padding: 30px 40px; /* Adiciona preenchimento interno ao contêiner */
 }
 
+/* Estilizando o cabeçalho do formulário */
 .wrapper h1{
     font-size: 36px;
-    text-align: center;
+    text-align: center; /* Centraliza o texto */
 }
 
+/* Estilizando o contêiner do campo de entrada */
 .wrapper .input-box {
     position: relative;
     width: 100%;
@@ -38,6 +43,7 @@ body {
     margin: 30px 0;
 }
 
+/* Estilizando o campo de entrada de texto */
 .input-box input {
     width: 100%;
     height: 100%;
@@ -51,10 +57,12 @@ body {
     padding: 20px 45px 20px 20px;
 }
 
+/* Estilizando o texto de espaço reservado no campo de entrada */
 .input-box input::placeholder {
     color: #fff;
 }
 
+/* Estilizando o ícone dentro do campo de entrada */
 .input-box i {
     position: absolute;
     right: 20px;
@@ -63,53 +71,60 @@ body {
     font-size: 20px;
 }
 
+/* Estilizando o contêiner para as opções de lembrar senha e esqueceu a senha */
 .wrapper .remember-forgot {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Distribui o espaço entre os elementos */
     font-size: 14.5px;
-    margin: -15px 0 15px;
+    margin: -15px 0 15px; /* Define a margem para os elementos */
 }
 
+/* Estilizando a opção de lembrar senha e a opção de esqueceu a senha */
 .remember-forgot label input {
-    accent-color: #fff;
-    margin-right: 3px;
+    accent-color: #fff; /* Define a cor de realce como branco */
+    margin-right: 3px; /* Define a margem à direita do elemento */
 }
 .remember-forgot a {
-    color: #fff;
-    text-decoration: none;
+    color: #fff; /* Define a cor do texto como branco */
+    text-decoration: none; /* Remove a decoração do texto */
 }
 
+/* Estilizando o comportamento ao passar o mouse sobre o link */
 .remember-forgot a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse sobre o link */
 }
 
+/* Estilizando o botão de envio */
 .wrapper .btn {
     width: 100%;
     height: 45px;
-    background: #fff;
+    background: #fff; /* Define o fundo do botão como branco */
     border: none;
     outline: none;
     border-radius: 40px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1); /* Adiciona uma sombra ao botão */
     cursor: pointer;
     font-size: 16px;
-    color: #333;
-    font-weight: 600;
+    color: #333; /* Define a cor do texto como cinza */
+    font-weight: 600; /* Define a espessura da fonte como negrito */
 }
 
+/* Estilizando o link para a página de registro */
 .wrapper .register-link {
     font-size: 14.5px;
-    text-align: center;
-    margin: 20px 0 15px;
+    text-align: center; /* Centraliza o texto */
+    margin: 20px 0 15px; /* Define a margem para o elemento */
     
 }
 
+/* Estilizando o link dentro do parágrafo de registro */
 .register-link p a{
-    color: #fff;
-    text-decoration: none;
-    font-weight: 600;
+    color: #fff; /* Define a cor do texto como branco */
+    text-decoration: none; /* Remove a decoração do texto */
+    font-weight: 600; /* Define a espessura da fonte como negrito */
 }
 
+/* Estilizando o comportamento ao passar o mouse sobre o link de registro */
 .register-link p a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse sobre o link */
 }
